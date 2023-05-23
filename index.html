@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container">
+        <div class="container__todo__list">
+            <div class="container__date">
+                <div class="container__fullDate">
+                    <div class="date">
+                    <p class="day"></p>
+                    <p class="weekday"></p>
+                    <span class="text">De</span>
+                    <p class="month"></p>
+                    <span class="text">Del</span>
+                    <p class="year"></p>
+                    </div>
+                </div>
+                <div class="container__clock">
+                    <p class="hour"></p>
+                    <span class="points">:</span>
+                    <p class="minutes"></p>
+                    <span class="points">:</span>
+                    <div class="box__secunds">
+                        <p class="secunds"></p>
+                        <p class="am__pm"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__task">
+                <input type="text" class="input_task"placeholder="Agregar tarea">
+                <span class="icon"></span>
+            </div>
+
+        </div>
+        <div class="container__show__todo">
+           <div class="container__task__toDo">
+             <h2 class="title__task">EN PROCESO</h2>
+               <div class="container__in__progress">
+                <input type="checkbox" class="progress">
+                <p class="name__task" >Esta tarea esta pendiente</p>
+                <div class="container__icons">
+                    <span class="icon_task edit"></span>
+                    <span class="icon_task delete"></span>
+                </div>
+               </div>
+            </div>
+            <div class="container__task__done">
+               <h2 class="title__task">TERMINADAS</h2>
+               <div class="container__in__progress">
+                <input type="checkbox" class="progress">
+                <p class="name__task" >Esta tarea esta realizada</p>
+                <div class="container__icons">
+                    <span class="icon_task edit"></span>
+                    <span class="icon_task delete"></span>
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <script src="./Js/index.js" type="module"></script>
+    <script src="./Js/functions.js" type="module"></script>
+</body>
+</html>
