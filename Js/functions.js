@@ -67,7 +67,6 @@ export function currentTime(weekday,day,month,year,hour,minutes,secunds,amPm) {
   minutes.textContent = minutesAc;
   secunds.textContent = secundsAc;
 }
-
 //validando archivos.
 export function validateFields(input_task) {
   if (input_task.value === "") {
